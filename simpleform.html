@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore Ccommcrce Website design </title>
+    <!-- <link rel="stylesheet" href="./styleeeeeeeeeeeeeeee.css"> -->
+
+
+</head>
+
+<body>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    justify-content: space-between;
+    background: radial-gradient(#fff, #111);
+    margin-top: 2px;
+    padding: 5px 5 ;
+
+}
+nav .logo{
+   font-size: 100px;
+   color: black;
+  font-weight: 600px;
+  justify-content: space-between;
+  text-align: left;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+
+  
+ 
+
+ 
+.menu-icon {
+    width: 30px;
+    margin-left: 60px;
+    margin-bottom: 200px;
+    /* background: #000; */
+    display: none;
+}
+
+/* ---------------   media query for menu  -------------- */
+
+@media only screen and (max-width: 800px) {
+
+   nav ul  {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+       display: block;
+       margin-right: 50px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+
+
+
+    }
+    nav ul li a{
+       color: #fff;
+    }
+    .menu-icon {
+       display: block;
+       cursor: pointer;
+     }
+
+}
+  
+</style>
+
+
+
+
+
+
+
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+               <nav>
+                <div class="logo ">
+                    BRAND X 
+               </div>
+            </nav>
+                <nav>
+                   
+                    <ul id="MenuItems">
+                        <li> <a href="./navigationnavigation2.html">Home</a> </li>
+                        <li> <a href="./About.Html">About </a> </li>
+                        <li> <a href="./simpleform.html"> Contact</a> </li>
+                        <li> <a href="./login5.html"> login & signup</a> </li>
+                    </ul>
+                </nav>
+                <img src="images/hamburger_button_menu_icon_155296.webp" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+            <form action="./sucess.html">
+                <fieldset>
+                     <legend> Name and address </legend>
+           
+                     <br>
+           
+           
+                     <br />
+           
+                     <label for="use-civicrm">    <label   for="cname">Do you use CiviCRM?</label>           </label>
+                     <input type="radio"    id="use-civicrm-yes"  required size="42px" name="use-civicrm" value="yes">
+                     <label for="use-civicrm-yes" >Yes</label>
+                     <input type="radio" id="use-civicrm-no"  required size="42px" name="use-civicrm" value="no">
+                     <label for="use-civicrm-no">No</label><br><br>
+           
+                     <label for="tname"> How long have you been using CiviCRM?</label>
+           
+               
+                          <select  id="tname"   required size="1px">
+                               
+                               <option>select</option>
+                               <option> water</option>
+                               <option> milk</option>
+                               <option> gas</option>
+                               <option> electricity</option>
+           
+                          </select>
+           
+           
+           
+           
+           
+                  
+           
+           
+                     <br>
+                     <label for="rname">Which CMS do you use? </label>
+           
+                      
+           
+                          <select    id="rname"   required size="1px">
+                               <option>select</option>
+                               <option> water</option>
+                               <option> milk</option>
+                               <option> gas</option>
+                               <option> electricity</option>
+           
+                          </select>
+           
+           
+           
+           
+           
+           
+                 
+                     <br />
+                     <br>
+           
+                     <label for="yname">your skill set? </label>
+            
+                          <select   id="yname" required size="1px">
+                               <option>select</option>
+                               <option> water</option>
+                               <option> milk</option>
+                               <option> gas</option>
+                               <option> electricity</option>
+           
+                          </select>
+           
+           
+           
+           
+            
+                   
+                          <br />
+                          <br>
+           
+                          <label for="fname" required size="42px">Email:</label>
+                          <input type="email" id="fname" required size="42px" />
+           
+           
+           
+                          <br />
+           
+           
+                          <br>
+                          <label for="frame"> First name:</label>
+                          <input id="frame" required size="42px" />
+                          <br />
+           
+                          <br>
+           
+           
+                          <label for="lname"> last Name: </label>
+                          <input type="text" id="lname" name="lname" required size="42px" />
+           
+                          <br />
+           
+                          <br>
+                          <label>First and last name will be shared with other visitors to the site.</label>
+                          
+                          <br />
+                          <br>
+                          <label for="sname">Street Address (Home)</label>
+                          <input id="sname" required size="42px" />
+                          <br />
+                          <br>
+                          <label for="dname">city (home)</label>
+                          <input id="dname" required size="42px" />
+                          <br />
+                          <br>
+                          <label for="uname"  >postal code (Home )</label>
+                          <input id="uname"   type="number"  required size="42px" />
+                          <br />
+                          <br>
+           
+                          <label for="iname"> country (Home) </label>
+                         
+                               <select   id="iname">
+           
+                                    <option>select</option>
+                                    <option> water</option>
+                                    <option> milk</option>
+                                    <option> gas</option>
+                                    <option> electricity</option>
+           
+                               </select>
+           
+                         
+                          <br />
+                          <br>
+                          <label> you state/province and countryof residence will be shared with other so folks can find other in their
+                               community.</label>
+                         
+                          <br>
+           
+           
+                          <label for="oname">state (Home) </label>
+                           
+           
+           
+                               <select   id="oname">
+                                    <option>select</option>
+                                    <option> water</option>
+                                    <option> milk</option>
+                                    <option> gas</option>
+                                    <option> electricity</option>
+           
+                               </select>
+            
+                         
+                          <br />
+           
+           
+           
+                </fieldset>
+           
+                <button type="submit"> submit </button> <button type="reset"> reset </button>
+           
+           
+           
+           
+           
+
+
+        <!-- ----------   js for toggle menu  ---------- -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+
+
+            }
+        </script>
+
+
+
+</body>
+
+</html>

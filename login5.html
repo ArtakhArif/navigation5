@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore Ccommcrce Website design </title>
+    <!-- <link rel="stylesheet" href="./styleeeeeeeeeeeeeeee.css"> -->
+
+
+</head>
+
+<body>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    justify-content: space-between;
+    background: radial-gradient(#fff, #111);
+    margin-top: 2px;
+    padding: 5px 5 ;
+
+}
+nav .logo{
+   font-size: 100px;
+   color: black;
+  font-weight: 600px;
+  justify-content: space-between;
+  text-align: left;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+
+  
+ 
+
+ 
+.menu-icon {
+    width: 30px;
+    margin-left: 60px;
+    margin-bottom: 200px;
+    /* background: #000; */
+    display: none;
+}
+
+/* ---------------   media query for menu  -------------- */
+
+@media only screen and (max-width: 800px) {
+
+   nav ul  {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    nav ul li{
+       display: block;
+       margin-right: 50px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+
+
+
+    }
+    nav ul li a{
+       color: #fff;
+    }
+    .menu-icon {
+       display: block;
+       cursor: pointer;
+     }
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* background-image:url( "./images/pexels-pixabay-414630.jpg") ; */
+    /* display: flex; */
+    background-size: 100%  740px;
+    font-family: 'Mulish' , sans-serif;
+}
+.contain h1{
+    font-size: 36px;
+    color: aqua;
+}
+.contain{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    margin-left: 40%;
+    margin-top: 8%;
+    text-align: center;
+    color: white;
+ 
+}
+.contain .text{
+    position: relative;
+    top: 7%;
+}
+
+.inp1{
+    border: none;
+    background-color: black;
+    border-bottom: 2px  solid white;
+    width: 250px;
+    font-size: 15px;
+margin-top: 40px;
+outline: none;
+color: #fff;
+
+}
+.inp2{
+    border: none;
+    background-color: black;
+    border-bottom: 2px  solid white;
+    width: 250px;
+    font-size: 15px;
+margin-top: 40px;
+outline: none;
+color: #fff;
+
+}
+.text button{
+width: 250px;
+height:44px ;
+background-color: aqua;
+color: black;
+border: none;
+font-size: 24px;
+border-radius: 25px;
+margin-top: 20px;
+ cursor: pointer;
+
+}
+button:hover{
+    border: 3px solid aqua;
+    color: white;
+font-size: 20px;
+background-color: black;
+
+}
+
+p{
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+p span{
+    color: white;
+    color: aqua;
+    cursor: pointer;
+}
+
+
+
+
+  
+</style>
+
+
+
+
+
+
+
+
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+               <nav>
+                <div class="logo ">
+                    BRAND X 
+               </div>
+            </nav>
+                <nav>
+                   
+                    <ul id="MenuItems">
+                        <li> <a href="./navigationnavigation2.html">Home</a> </li>
+                        <li> <a href="./About.Html">About </a> </li>
+                        <li> <a href="./simpleform.html"> Contact</a> </li>
+                        <li> <a href="./login5.html"> login & signup</a> </li>
+                    </ul>
+                </nav>
+                <img src="images/hamburger_button_menu_icon_155296.webp" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+ 
+
+
+
+            
+
+    <div  class="contain">
+        <div class="text" >
+        <h1>Login</h1>
+        <input  class="inp1" type="text"  placeholder="Enter UserName"  >
+        <input class="inp2" type="password"    placeholder="Enter password"  >
+        <p>Forget password ?</p>
+        <button>Login</button>
+        <p>Not a member?  <span>Sign Up </span></p>
+        
+        </div>
+            
+        </div>
+        
+
+
+
+
+        <!-- ----------   js for toggle menu  ---------- -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+
+
+            }
+        </script>
+
+
+
+</body>
+
+</html>
